@@ -1,14 +1,3 @@
 ```{r}
-options(rlang_backtrace_on_error = "full")
-```
-
-```{r}
-f <- function() g()
-g <- function() h()
-h <- function() i()
-i <- function() stop("Error")
-```
-
-```{r}
-f()
+cat("Hi!", file = stderr())
 ```
